@@ -80,4 +80,4 @@ public class Lec1Exercise {
       System.out.println("Location: (" + lLat / lN + ", " + lLon / lN + ")");
 
    }
-}
+}}
