@@ -1,11 +1,35 @@
 //  i   want to know if this is working
-/**
- * trial1
- */
+
 public class JavaSyntax {
 
+  //class attribute
+  int xx;
+
+  //constructor
+  public JavaSyntax(int yy) {
+    xx = 55 - yy;
+  }
+
+  //methods
+  static void myMethod() {
+    System.out.println("I just got executed!");
+  }
+
+  static String method(int a, String b) {
+    return a + b;
+  }
+
+  //main method (WE START HERE)
   public static void main(String[] args) {
     System.out.println("Test");
+
+    // run method
+    myMethod();
+    System.out.println(method(7, " is many people's lucky number!"));
+
+    // create new object
+    JavaSyntax object = new JavaSyntax(44);
+    System.out.println(object.xx);
 
     // type variableName = value;
     String name = "John";
@@ -21,24 +45,26 @@ public class JavaSyntax {
     float myFloatNum = 5.99f;
     System.out.println(myFloatNum);
 
+
+    //finalize a value
     final int myNum = 15;
     // myNum = 20;
     // will generate an error: cannot assign a value to a final variable
     System.out.println(myNum);
 
+    //operation
     int x = 5, y = 6, z = 50;
     System.out.println(x + y + z);
 
-    /*
-     * byte 1 byte Stores whole numbers from -128 to 127 short 2 bytes Stores whole
-     * numbers from -32,768 to 32,767 int 4 bytes Stores whole numbers from
-     * -2,147,483,648 to 2,147,483,647 long 8 bytes Stores whole numbers from
-     * -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 float 4 bytes Stores
-     * fractional numbers. Sufficient for storing 6 to 7 decimal digits double 8
-     * bytes Stores fractional numbers. Sufficient for storing 15 decimal digits
-     * boolean 1 bit Stores true or false values char 2 bytes Stores a single
-     * character/letter or ASCII values
-     */
+    //array
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 
+    String a = cars[1];
+
+    System.out.println(a + " is not my car sadly");
+
+    for (String i : cars) {
+      System.out.println(i);
+    }
   }
 }
