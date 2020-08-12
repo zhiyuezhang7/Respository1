@@ -45,6 +45,16 @@ public class JavaSyntax {
     float myFloatNum = 5.99f;
     System.out.println(myFloatNum);
 
+    //force int into double
+    int one = 1;
+    int two = 2;
+    double half = ((double) one) / two;
+    System.out.println(half);
+
+    // (a > b) ? a : b; is an expression which returns one of two values, a or b. 
+    // The condition, (a > b), is tested. 
+    // If it is true the first value, a, is returned. 
+    // If it is false, the second value, b, is returned. 
 
     //finalize a value
     final int myNum = 15;
