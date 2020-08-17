@@ -72,6 +72,8 @@ Corin Tucker 2
 2 Sponge 1.15
 Janet Weiss 1
 5 Salami 2.50
+
+
 ```
 
 Should produce the following output:

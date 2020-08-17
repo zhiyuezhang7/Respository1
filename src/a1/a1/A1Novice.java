@@ -29,14 +29,15 @@ public class A1Novice {
 				}
 			}
 		}
+		
 
 		scan.close();
 		for (int i = 0; i < count; i++) {
 			if (i == count - 1) {
-				System.out.println(names[i] + total[i]);
+				System.out.println(names[i] + String.format("%.2f", total[i]));
 				break;
 			}
-			System.out.println(names[i] + total[i] + " ");
+			System.out.println(names[i] + String.format("%.2f", total[i]) + " ");
 		}
 
 
