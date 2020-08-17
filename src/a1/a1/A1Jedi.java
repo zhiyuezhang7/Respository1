@@ -26,13 +26,16 @@ public class A1Jedi {
 			scan.next();
 			scan.next();
 			index[i] = scan.nextInt();
+			String[] itemBought = new String[index[i]];
 			for (int j = 0; j < index[i]; j++) {
 				int number = scan.nextInt();
-				String itemBought = scan.next();
+				itemBought[j] = scan.next();
 				for (int k = 0; k < itemN; k++) {
-					if (itemBought.equals(item[k])) {
+					if (itemBought[j].equals(item[k])) {
 						total[k] += number;
-						people[k]++;
+						if (same(itemBought, j, itemBought[j]) == 0) {
+							people[k]++;
+						}
 					}
 				}
 			}
@@ -45,6 +48,17 @@ public class A1Jedi {
 				System.out.println(people[i] + " customers bought " + total[i] + " " + item[i]);
 			}
 		}
+		
+	
+	}
+
+	static int same(String[] items, int index, String item) {
+		for (int i=0; i < index; i++) {
+			if (items[i].equals(item)) {
+				return 1;
+			}
+		}
+		return 0;
 	}
 }
 //6
